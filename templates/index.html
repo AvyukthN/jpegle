@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='custom.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>.jpegle</title>
+</head>
+<body>
+    <h1>.jpegle</h1>
+	<!-- <img src="assets/jpegle_logo.png"> -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <form method="POST" action="/create" enctype="multipart/form-data">
+        <input type="file" name="profile_image">
+        <input type="submit">
+    </form>
+</body>
+</html>
